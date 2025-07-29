@@ -1,0 +1,310 @@
+# vsim -c -sv_seed random -coverage top "+UVM_TESTNAME=spi_demo_test" -do "cov.do" 
+# Start time: 12:42:59 on Jul 22,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.spi_cfg_pkg(fast)
+# Loading work.apb_seq_pkg(fast)
+# Loading work.spi_tlm_pkg(fast)
+# Loading work.spi_chk_pkg(fast)
+# Loading work.apb_if(fast)
+# Loading work.apb_slave_agent_pkg(fast)
+# Loading work.spi_if(fast)
+# Loading work.clk_rst_if(fast)
+# Loading work.spi_slave_agent_pkg(fast)
+# Loading work.spi_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.spi_env_pkg(fast)
+# Loading work.spi_test_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.spi_top(fast)
+# Loading /home/eda/siemens/questasim/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 1673848149
+# do cov.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_demo_test...
+# UVM_INFO @ 0: uvm_test_top [spi_base_test] base build phase
+# UVM_INFO @ 0: uvm_test_top [spi_demo_test] demo build phase
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(43) @ 0: uvm_test_top.spi_env.predictor_0 [predictor_0] Predictor resetting
+# UVM_INFO @ 0: uvm_test_top [spi_base_test] start of simulation
+# UVM_INFO @ 0: uvm_test_top [spi_demo_test] Running ...
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/env/spi_env.svh(55) @ 0: uvm_test_top.spi_env [spi_env] Running env ...
+# UVM_INFO @ 0: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Running ...
+# UVM_INFO @ 0: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Running ...
+# UVM_INFO @ 0: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Starting get_and_drive
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/spi_slave_monitor.sv(64) @ 1000: uvm_test_top.spi_env.spi_slave_agent_0.spi_slave_monitor [spi_slave_monitor] Reset is complete
+# UVM_INFO @ 1000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@rst_seq [] Sending reset packet 
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(61) @ 2000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is low
+# UVM_INFO @ 301000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] I saw reset assertion
+# UVM_INFO @ 1301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@rst_seq [] Received reponse packet
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/seq/apb_demo_seq.sv(135) @ 1301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 98, num_dwords = 4
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h62 
+# -------------------------------------
+# UVM_INFO @ 1301000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 1321000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 1441000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 0 wdata=aaaaaaaa
+# UVM_INFO @ 1441000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 1501000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 1621000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 4 wdata=bbbbbbbb
+# UVM_INFO @ 1621000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 1681000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 1801000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 8 wdata=cccccccc
+# UVM_INFO @ 1801000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 1861000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 1981000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 12 wdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 1981000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 1981000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 1981000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 1981000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = 00000001
+# UVM_INFO @ 1981000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 2041000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b62
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 2161000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 16 wdata=3b62
+# UVM_INFO @ 13862000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO @ 13862000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/spi_slave_monitor.sv(78) @ 13922000: uvm_test_top.spi_env.spi_slave_agent_0.spi_slave_monitor [spi_slave_monitor] spi clk_cnt = 98, rx = 1ccccccccbbbbbbbbaaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = 1
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 13922000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = 1
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(55) @ 13982000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is high
+# UVM_INFO @ 122221000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 122281000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 122401000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 122401000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 0 rdata=dddddddd
+# UVM_INFO @ 122401000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(61) @ 122402000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is low
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 122461000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 122581000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 122581000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 4 rdata=cccccccc
+# UVM_INFO @ 122581000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 122641000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 122761000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=8 rdata=bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 122761000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 8 rdata=bbbbbbbb
+# UVM_INFO @ 122761000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 122821000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 122941000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=c rdata=2
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 122941000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 12 rdata=2
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 122941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 122941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 122941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 122941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = 00000002
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = 00000002
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 122941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = 2
+# UVM_INFO @ 122941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/seq/apb_demo_seq.sv(135) @ 122941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 33, num_dwords = 2
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h21 
+# -------------------------------------
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 123001000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 123121000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 0 wdata=aaaaaaaa
+# UVM_INFO @ 123121000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 123181000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 123301000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 4 wdata=bbbbbbbb
+# UVM_INFO @ 123301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 123361000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 123481000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 8 wdata=cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 123481000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 123481000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = 00000001
+# UVM_INFO @ 123481000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 123541000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 123661000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 12 wdata=dddddddd
+# UVM_INFO @ 123661000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 123721000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b21
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 123841000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 16 wdata=3b21
+# UVM_INFO @ 127742000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO @ 127742000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/spi_slave_monitor.sv(78) @ 127802000: uvm_test_top.spi_env.spi_slave_agent_0.spi_slave_monitor [spi_slave_monitor] spi clk_cnt = 33, rx = 1aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 127802000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 127802000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 127802000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = 1
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 127802000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = 1
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(55) @ 127862000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is high
+# UVM_INFO @ 243901000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 243961000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 244081000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 244081000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 0 rdata=dddddddd
+# UVM_INFO @ 244081000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(61) @ 244082000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is low
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 244141000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 244261000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=0
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 244261000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 4 rdata=0
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 244261000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 244261000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 244261000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 244261000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 244261000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 244261000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = 0
+# UVM_INFO @ 244261000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/seq/apb_demo_seq.sv(135) @ 244261000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 120, num_dwords = 4
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h2  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h78 
+# -------------------------------------
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 244321000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 244441000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 0 wdata=aaaaaaaa
+# UVM_INFO @ 244441000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 244501000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 244621000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 4 wdata=bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 244621000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 244621000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 244621000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(85) @ 244621000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign mosi = 00dddddd
+# UVM_INFO @ 244621000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 244681000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 244801000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 8 wdata=cccccccc
+# UVM_INFO @ 244801000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 244861000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 244981000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 12 wdata=dddddddd
+# UVM_INFO @ 244981000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(90) @ 245041000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b78
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(70) @ 245161000: uvm_test_top.spi_env.predictor_0 [predictor_0] Write to address 16 wdata=3b78
+# UVM_INFO @ 259502000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/spi_slave_monitor.sv(78) @ 259562000: uvm_test_top.spi_env.spi_slave_agent_0.spi_slave_monitor [spi_slave_monitor] spi clk_cnt = 120, rx = ddddddccccccccbbbbbbbbaaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = aaaaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(65) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt mosi = dddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(73) @ 259562000: uvm_test_top.spi_env.sb_0 [sb_0] Matched mosi = dddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(55) @ 259622000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is high
+# UVM_INFO @ 365221000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 365281000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 365401000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 365401000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 0 rdata=dddddddd
+# UVM_INFO @ 365401000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(61) @ 365402000: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] IRQ is low
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 365461000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 365581000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 365581000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 4 rdata=cccccccc
+# UVM_INFO @ 365581000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 365641000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 365761000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=8 rdata=bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 365761000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 8 rdata=bbbbbbbb
+# UVM_INFO @ 365761000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(116) @ 365821000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/agt/master/apb_driver.sv(128) @ 365941000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=c rdata=aaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(101) @ 365941000: uvm_test_top.spi_env.predictor_0 [predictor_0] Read at address 12 rdata=aaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 365941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 365941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 365941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/predictor.sv(113) @ 365941000: uvm_test_top.spi_env.predictor_0 [predictor_0] assign miso = 00aaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = dddddddd
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = cccccccc
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = bbbbbbbb
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(102) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Received act_pkt miso = 00aaaaaa
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/chk/sb.sv(110) @ 365941000: uvm_test_top.spi_env.sb_0 [sb_0] Matched miso = aaaaaa
+# UVM_INFO @ 365941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 365941010: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/env/spi_env.svh(59) @ 365941010: uvm_test_top.spi_env [spi_env] Extract phase is called
+# UVM_ERROR /home/s21521499/trese_local/lab_spi_tb/tb/agt/slave/apb_slave_monitor.sv(46) @ 365941010: uvm_test_top.spi_env.apb_slave_agent_0.apb_slave_monitor [apb_slave_monitor] irq_cnt=3, max_loop=2
+# UVM_INFO /home/s21521499/trese_local/lab_spi_tb/tb/env/spi_env.svh(63) @ 365941010: uvm_test_top.spi_env [spi_env] Check phase is called
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  183
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# []    36
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [apb_driver]    38
+# [apb_slave_monitor]     8
+# [predictor_0]    46
+# [sb_0]    40
+# [spi_base_test]     2
+# [spi_demo_test]     2
+# [spi_driver]     1
+# [spi_env]     3
+# [spi_slave_monitor]     4
+# ** Note: $finish    : /home/eda/siemens/questasim/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 365941010 ps  Iteration: 53  Instance: /top
+# Saving coverage database on exit...
+# End time: 12:43:04 on Jul 22,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 1
