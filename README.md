@@ -15,7 +15,6 @@ Verify the correct functionality of an APB-to-SPI bridge module, supporting bi-d
 - **Functional Coverage:** 
   - `num_chars` field (number of characters per transfer) is a key coverage point
 - **Verification Approach:**
-  - Directed and constrained-random test sequences
   - Monitors and scoreboard to check data integrity
   - Coverage collection and analysis
 
@@ -31,7 +30,7 @@ Verify the correct read/write behavior of a RAM module interfaced via the Wishbo
   - Coverage on address space access patterns
 - **Verification Approach:**
   - Scoreboard comparison for expected vs actual memory values
-  - Random and directed scenarios
+  - Coverage collection and analysis
 
 ## 🛠️ Tools & Methodology
 
