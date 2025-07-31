@@ -37,8 +37,3 @@ Verify the correct read/write behavior of a RAM module interfaced via the Wishbo
 - **Language:** SystemVerilog
 - **Methodology:** UVM (Universal Verification Methodology)
 - **Simulator:** Mentor QuestaSim
-- **Testbench Components:**
-  - Agents (drivers, monitors)
-  - Sequencer and sequence libraries
-  - Scoreboard for checking correctness
-  - Coverage models for key metrics
